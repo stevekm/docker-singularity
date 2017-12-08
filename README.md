@@ -19,12 +19,13 @@ docker build -t stevekm/singularity .
 docker run --privileged --rm -ti stevekm/singularity
 ```
 
-
-
-
 # Notes
 
-To run a Docker base image directly:
+- The demo Singularity container will be created when the Docker container is run; the `--privileged` argument is required for Docker
+
+- Inside the Docker container, test the Singularity container by running `/test.sh`
+
+- To run a Docker base image directly:
 
 ```
 docker run --privileged --rm -ti debian:jessie /bin/bash
